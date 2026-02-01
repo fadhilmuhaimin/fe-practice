@@ -5,7 +5,7 @@ import { Product, CartItem } from "@/src/types";
 export function useCart() {
   const [items, setItems] = useState<CartItem[]>([]);
 
-  const addTocart = useCallback((product: Product) => {
+  const addToCart = useCallback((product: Product) => {
     setItems((prevItems) => {
       const existingItem = prevItems.find(
         (item) => item.product.id === product.id,
@@ -58,7 +58,7 @@ export function useCart() {
 
   return{
     items,
-    addTocart,
+    addToCart,
     removeFromCart,
     updateQuantity,
     totalItems,
