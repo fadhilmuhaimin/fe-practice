@@ -27,7 +27,7 @@ export default function ProductCard({
         onAddToCart(id);
     };
     return (
-        <div className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md">
+        <div className="relative rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md">
 
             {isLowStock && (
                 <span className="absolute right-2 top-2 z-10 rounded-full bg-orange-500 px-2 py-1 text-xs font-semibold text-white">Low Stock</span>

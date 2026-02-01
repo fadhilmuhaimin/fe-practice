@@ -1,7 +1,22 @@
 export type Product = {
     id : number;
-    name : string;
+    title : string;
+    description : string;
     price : number;
-    imageUrl : string;
+    discountPercentage : number;
+    rating : number;
     stock : number;
+    brand : string;
+    category : string;
+    thumbnail : string;
+    images : string[];
 };
+
+export type ProductsResponse = {
+    products : Product[];
+    total : number;
+    skip : number;
+    limit : number;
+}
+
+export type ProductCategory = string;
